@@ -881,9 +881,9 @@ a.button.outline {
   }
   
   &:hover img {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-    filter: gray;
-    -webkit-filter: grayscale(100%);
+    // filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    // filter: gray;
+    //-webkit-filter: grayscale(100%);
     transform: scale(1.5);
   }
   
@@ -912,3 +912,256 @@ a.button.outline {
     transition-delay: 0.2s;
   }
 } 
+//================================
+.hero {
+  background: url('http://wallpoper.com/images/00/34/39/15/circuit-pcb_00343915.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  &:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+		opacity: .8; 
+  }
+  .intro {
+    padding: 3rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+    font-weight: 300;
+    text-align: center;
+  }
+  p {
+    color: #fff;
+    line-height: 1.75em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .tech-img {
+    background: url('http://static.pexels.com/wp-content/uploads/2015/02/apple-hand-iphone-6-4322-525x350.jpg') no-repeat center center;
+    background-size: cover;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: 40.063em) {
+    .tech-img {
+      height: 18rem;
+      width: 18rem;
+    }
+    h1 {
+      padding-top: 4.5rem;
+      text-align: right;
+      font-size: 2.5rem;
+    }
+    p {
+      text-align: right;
+    }
+  }
+}
+.middleblock{
+    @extend .callout;
+    background: transparent !important;
+    border:none !important;
+    
+    button{
+        margin-bottom:0;
+    }
+}
+.list{
+    .callout{
+        margin-bottom:0; 
+    }
+}
+
+
+////////////////////////////////////////////////////////////////////////
+
+body.lesson-bg {
+    background-color: $light-gray;
+}
+
+.learning-video {
+    background-color: $black;
+    max-height: 720px;
+    & iframe {
+        max-height: 720px;
+        width: auto;
+    }
+}
+
+.lesson-bg {
+    background-color: $white;
+}
+
+.side-nav-style {
+    list-style-type: none;
+    margin: 0;
+}
+
+.side-nav li, purchase {
+    padding: 10px;
+    background-color: $white;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: $light-gray;
+    border-width: 1px;
+}
+
+.side-nav li a {
+    color: $hight-dark-gray;
+}
+
+.side-nav li.active {
+    background-color: $primary-color;
+    & a {
+        color: $white;
+    }
+}
+
+.detail-header {
+    font-size: 1.8em;
+    color: $black;
+}
+
+p.detail-info {
+    border-bottom: solid 3px $black;
+}
+
+h1.lesson-header {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: $primary-color;
+    margin-bottom: 0.2em;
+    & img {
+        margin: 0;
+    }
+}
+
+.view-select  {
+    text-align: right;
+    & a {
+    color: $black;
+    }
+    & a.active {
+    color: $primary-color;
+    }
+}
+
+
+.have-like {
+    margin-bottom: 1em !important;
+}
+    
+.accordion {
+    margin-bottom: 3em;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-bottom-width: 10px !important;
+    border-color: $black !important;
+    border-bottom-color: $success-color !important;
+    & .title {
+        border-bottom-width: 0;
+        padding: 1.25rem 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: block;
+        font-size: 0.75rem;
+        position: relative;
+    }
+    & h2 {
+        color: $white;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 1em;
+        margin-left: -15px;
+        margin-bottom: 1em;
+        padding: 0.2em 0 0 0.9em;
+        width: 160px;
+        background-color: $success-color;
+    }
+    & h3 {
+        font-size: 1.5em;
+    }
+    & .float-right {
+        margin-right: 2em;
+    }
+    & a {
+        margin-top: 1em;
+        & img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    & .control {
+        clear: both;
+        padding-top: 10px;
+        margin: 0;
+    }
+    & .undisplay {
+        display: none; 
+    }
+    & .detail {
+        margin-left: 3em; 
+        margin-right: 3em;
+    }
+    & .lesson-map {
+        margin-bottom: 1.5em;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+
+    }
+    & .week-info {
+        color: $success-color;
+        border-bottom: solid 1px $success-color;
+    }
+    & .lesson-icon p {
+        text-align: center;
+    }
+    & img.icon {
+        margin-top: 1em;
+    }
+    & .lesson-icon {
+        text-align: center;
+        padding: 0;
+        & img {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.comment {
+    & .title {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    & .user-img {
+        margin: auto;
+    }
+    & .like-button {
+        margin-bottom: 0.2em;
+    }
+    & .discussion {
+        margin-top: 1.2em;
+    }
+    & .user-discus {
+        text-align: center;
+    }
+}
+
+footer {
+    margin-top: 5em;
+}
