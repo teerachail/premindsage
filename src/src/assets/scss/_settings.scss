@@ -988,8 +988,27 @@ a.button.outline {
 }
 
 
-////////////////////////////////////////////////////////////////////////
+icon///////////////////////////////////////////////////////////////////////
+.size-12 { font-size: 12px; }
+      
+.size-14 { font-size: 14px; }
+      
+.size-16 { font-size: 16px; }
+      
+.size-18 { font-size: 18px; }
+      
+.size-21 { font-size: 21px; }
 
+.size-24 { font-size: 24px; }
+      
+.size-36 { font-size: 36px; }
+      
+.size-48 { font-size: 48px; }
+      
+.size-60 { font-size: 60px; }
+      
+.size-72 { font-size: 72px; }
+///////////////////////////////////////////////////////////////////////////
 body.lesson-bg {
     background-color: $light-gray;
 }
@@ -1010,15 +1029,34 @@ body.lesson-bg {
 .side-nav-style {
     list-style-type: none;
     margin: 0;
+    margin-bottom: 3em;
 }
 
-.side-nav li, purchase {
-    padding: 10px;
+.side-nav li {
+    padding: 10px 20px;
     background-color: $white;
     border-radius: 2px;
     border-style: solid;
     border-color: $light-gray;
     border-width: 1px;
+    & i {
+        padding: 0 10px;
+    }
+}
+
+.purchase {
+    background-color: $white;
+    text-align: center;
+    padding: 4rem;
+    margin-bottom: 2em;
+    & p {
+        line-height: 120%;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $primary-color;
+        text-align: left;
+        margin-bottom: 0.2em;
+    }
 }
 
 .side-nav li a {
@@ -1041,9 +1079,10 @@ p.detail-info {
     border-bottom: solid 3px $black;
 }
 
-h1.lesson-header {
+.lesson-header {
     font-size: 1.8em;
     font-weight: bold;
+    height: 43px;
     color: $primary-color;
     margin-bottom: 0.2em;
     & img {
@@ -1141,6 +1180,15 @@ h1.lesson-header {
             margin-bottom: 0px;
         }
     }
+    & .extra-header {
+        font-size: 1.3em;
+    }
+    & .extra {
+        margin-bottom: 15px;
+        & p {
+            margin-bottom: 0.2em;
+        }
+    }
 }
 
 .comment {
@@ -1162,6 +1210,13 @@ h1.lesson-header {
     }
 }
 
-footer {
-    margin-top: 5em;
+.partner {
+    background-color: $white;
+    padding: 4rem;
 }
+
+textarea {
+    resize: none;
+    overflow: hidden !important;
+}
+
