@@ -1145,10 +1145,9 @@ p.detail-info {
             height: 32px;
         }
     }
-    & .control {
-        clear: both;
-        padding-top: 10px;
-        margin: 0;
+    & .detail {
+        margin-left: 3em; 
+        margin-right: 3em;
     }
     & .lesson-map {
         margin-bottom: 1.5em;
