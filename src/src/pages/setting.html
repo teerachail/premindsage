@@ -20,10 +20,9 @@
     </div>
 
     <div class="learning-video">
-        <div class="row">
-            <div class="flex-video widescreen">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/J4GUFDldIXQ" frameborder="0" allowfullscreen></iframe>
-            </div>
+        <div>
+            <img src="http://placehold.it/2000x750?text=Banner"></img>
+
         </div>
     </div>
 
@@ -33,7 +32,7 @@
                 Hello Sak <a class="float-right" href="#"><i class="fi-mail size-36"></i><span class="badge">1</span></a>
             </h1>
             <ul class="side-nav side-nav-style lesson-bg">
-                <li class="active">
+                <li>
                     <a href="#"><i class="fi-home size-36"></i> HOME</a>
                 </li>
                 <li>
@@ -45,46 +44,58 @@
                 <li>
                     <a href="#"><i class="fi-torsos-all size-36"></i> CLASS</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#"><i class="fi-widget size-36"></i> SETIING</a>
                 </li>
             </ul>
         </div>
 
-        <div class="large-9 push-3 columns">
+        <div class="large-9 push-3 columns setting" data-accordion data-multi-expand="true" data-allow-all-closed="true">
             <div class="row">
                 <div class="large-6 columns">
-                    <h1 class="lesson-header">SEMESTER A</h1>
-                </div>
-                <div class="large-6 columns view-select">
-                    <a class="active">TEACHER VIEW</a>
-                    <span>|</span>
-                    <a>STUDENT VIEW</a>
+                    <h1 class="lesson-header">SETTINGS</h1>
                 </div>
             </div>
-            <div class="lesson-bg accordion">
-                <div class="row" data-accordion data-allow-all-closed="true">
-                    <div class="title">
-                        <h2>UNIT No.</h2>
-                    </div>
-                    <div class="detail" data-accordion-item>
-                        <h3>Title of The Week's Lesson</h3>
-                        <p class="week-info">UNIT No.</p>
-                        <p>infomation</p>
-                        <a>
-                            <p> > More Details</p>
-                        </a>
-                        <div class="undisplay" data-tab-content>
-                            <div>
-                                <p>info................</p>
-                            </div>
-                        </div>
+
+            <div class="row settting-edit" data-accordion-item>
+                <div class="small-4 large-2 columns">
+                    <p>User Info</p>
+                </div>
+                <a class="small-2 large-2 columns">Edit</a>
+                <div class="control undisplay" data-tab-content>
+                    <div class="large-12 columns">
+                        <p>info................</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="row settting-edit" data-accordion-item>
+                <div class="small-4 large-2 columns">
+                    <p>Class Info</p>
+                </div>
+                <a class="small-2 large-2 columns">Edit</a>
+                <div class="small-6 large-4 columns">
+                    <a class="viewlist" href="../classlist.html">View Student List</a>
+                </div>
+                <div class="control undisplay" data-tab-content>
+                    <div class="large-12 columns">
+                        <p>info................</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="large-offset-1 large-10">
+                <p>Student Message</p>
+                <textarea rows="3"></textarea>
+                <a class="button primary large-centered float-right" href="#">SEND</a>
             </div>
         </div>
     </div>
 
+
+
+    </div>
+    </div>
     <footer class="footer">
         <div class="row">
             <div class="large-2 column">
@@ -102,6 +113,7 @@
                     <a href="#">Contact</a>
                 </p>
             </div>
+
         </div>
     </footer>
 

@@ -1150,13 +1150,6 @@ p.detail-info {
         padding-top: 10px;
         margin: 0;
     }
-    & .undisplay {
-        display: none; 
-    }
-    & .detail {
-        margin-left: 3em; 
-        margin-right: 3em;
-    }
     & .lesson-map {
         margin-bottom: 1.5em;
         margin-left: 0px !important;
@@ -1190,6 +1183,30 @@ p.detail-info {
         }
     }
 }
+
+.setting {
+    & a {
+        color: $dark-gray;
+        padding-right: 3em;
+    }
+    & .viewlist {
+        color: $primary-color;
+    }
+    & .settting-edit {
+        border-bottom: solid 2px $dark-gray;
+        margin-bottom: 1em;
+    }    
+}
+
+.undisplay {
+    display: none; 
+}
+
+.control {
+    clear: both;
+    padding-top: 10px;
+    margin: 0;
+} 
 
 .comment {
     & .title {
